@@ -6,9 +6,9 @@ public class UniquenessDriver {
         Random rand = new Random();
 
         // check for unique1 (slow O(n^2))
-        //int maxN1 = findMaxN(860000, 860000, true, rand);
-        //System.out.println("=== Final Result ===");
-        //System.out.println("Largest n for unique1 in under 1 minute: " + maxN1);
+        int maxN1 = findMaxN(860000, 860000, true, rand);
+        System.out.println("=== Final Result ===");
+        System.out.println("Largest n for unique1 in under 1 minute: " + maxN1);
 
         // check for unique2 (fast O(n log n))
         int maxN2 = findMaxN(263000000, 263222222, false, rand);
