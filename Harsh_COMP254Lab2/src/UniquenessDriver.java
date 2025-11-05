@@ -11,9 +11,9 @@ public class UniquenessDriver {
         System.out.println("Largest n for unique1 in under 1 minute: " + maxN1);
 
         // check for unique2 (fast O(n log n))
-        int maxN2 = findMaxN(263000000, 263222222, false, rand);
-        System.out.println("=== Final Result ===");
-        System.out.println("Largest n for unique2 in under 1 minute: " + maxN2);
+        //int maxN2 = findMaxN(245700000, 245700000, false, rand);
+        //System.out.println("=== Final Result ===");
+        //System.out.println("Largest n for unique2 in under 1 minute: " + maxN2);
     }
 
     // Finds the biggest n that works in 1 min
