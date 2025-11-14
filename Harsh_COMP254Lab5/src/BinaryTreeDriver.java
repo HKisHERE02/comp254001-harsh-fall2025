@@ -1,0 +1,15 @@
+public class BinaryTreeDriver {
+    public static void main(String[] args) {
+        //create and populate a linked binary tree
+        LinkedBinaryTree lbt = new LinkedBinaryTree();
+        Position<String> root =lbt.addRoot("ICET");
+
+        //
+        Position<String> softwarePosition = lbt.addLeft(root, "Software");
+        Position<String> networkingPosition = lbt.addRight(root, "Networking");
+        Position<String> set = lbt.addLeft(softwarePosition, "SET");
+        Position<String> ig = lbt.addRight(softwarePosition, "IG");
+
+        lbt.printInorderUsingNext();
+    }
+}
